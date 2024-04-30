@@ -14,3 +14,31 @@ See an example of use in the file **experiment_CV.py**
 [Read the paper here](https://www.researchgate.net/publication/380184328_CLASSP_a_Biologically-Inspired_Approach_to_Continual_Learning_through_Adjustment_Suppression_and_Sparsity_Promotion)
 
 CLASSP is based on two main principles observed in neuroscience, particularly in the context of synaptic transmission and Long-Term Potentiation (LTP). The first principle is a decay rate over the weight adjustment, which is implemented as a generalization of the AdaGrad optimization algorithm. This means that weights that have received many updates should have lower learning rates as they likely encode important information about previously seen data. However, this principle results in a diffuse distribution of updates throughout the model, as it promotes updates for weights that haven't been previously updated, while a sparse update distribution is preferred to leave weights unassigned for future tasks. Therefore, the second principle introduces a threshold on the loss gradient. This promotes sparse learning by updating a weight only if the loss gradient with respect to that weight is above a certain threshold, i.e. only updating weights with a significant impact on the current loss. Both principles reflect phenomena observed in LTP, where a threshold effect and a gradual saturation of potentiation have been observed. CLASSP is implemented in a Python/PyTorch class, making it applicable to any model. When compared with Elastic Weight Consolidation (EWC) using Computer Vision datasets, CLASSP demonstrates superior performance in terms of accuracy and memory footprint.
+
+Below is a pseudo-code representing the algorithm in CLASSP.py:
+
+# CLASSP Optimizer
+
+**Input:** 
+- params: learning rate `α`, `threshold`, power `p`, `apply_decay` and `ε`
+
+**Output:** 
+- `loss`
+
+**Procedure:**
+1. Initialize CLASSP with `α`, `threshold`, power `p`, `apply_decay` and `ε`
+2. For each step in optimization
+   1. Calculate `loss` with autograd
+   2. Calculate `grad ← ∇ loss(w)` with autograd for all parameters `w`
+   3. For each group of parameters
+      1. For each parameter `w` in group
+         1. If gradient of `w` is not None
+            1. Initialize `grad_sum` for `w` if not already done
+            2. If `grad² > threshold`
+               1. Update `grad_sum` for `w`:
+               2. `grad_sum ← grad_sum + |grad|ⁿ`
+               3. If `apply_decay` is True
+                  1. Calculate scaling factor for `w`: 
+                  2. `scaling_factor ← α / (ε + grad_sum)^(1/p)`
+                  3. Update `w`: `w ← w - scaling_factor * grad`
+3. Return `loss`
