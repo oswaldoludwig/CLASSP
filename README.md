@@ -19,11 +19,11 @@ Below is a pseudo-code representing the algorithm in CLASSP.py:
 
  # CLASSP Optimizer
 <pre>
-**Input:** 
-params: learning rate α, threshold, power p, apply_decay and ε
-**Output:** 
-loss
-**Procedure:**
+Input: 
+    params: learning rate α, threshold, power p, apply_decay and ε
+Output: 
+    loss
+Procedure:
  1  Initialize CLASSP with α, threshold, power p, apply_decay and ε
  2  For each step in optimization
  3      Calculate loss with autograd
