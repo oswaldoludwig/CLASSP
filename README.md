@@ -34,7 +34,7 @@ Procedure:
  8                  Initialize grad_sum for w if not already done
  9                  If grad² > threshold
  10                     Update grad_sum for w:
- 11                     grad_sum ← grad_sum + |grad|ⁿ
+ 11                     grad_sum ← grad_sum + |grad|^p
  12                     If apply_decay is True
  13                         Calculate scaling factor for w: 
  14                         scaling_factor ← α / (ε + grad_sum)^(1/p)
