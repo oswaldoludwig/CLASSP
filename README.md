@@ -1,2 +1,4 @@
 # CLASSP
  A Biologically-Inspired Approach to Continual Learning through Adjustment Suppression and Sparsity Promotion
+
+This repository contains the codebase of CLASSP, a novel continual learning method inspired by biological learning principles. CLASSP tackles catastrophic forgetting by balancing the acquisition of new information with the preservation of past knowledge. This is achieved through two key mechanisms: a decay rate on weight updates and a threshold on the loss gradient. Decay rate assigns smaller learning rates to weights that have been frequently updated, thus preserving their relevance to past tasks, while the threshold promotes sparsity, reserving capacity for future tasks. In case of publication using ideas or code from this repository, please cite the paper DOI: 10.13140/RG.2.2.20942.06724 
