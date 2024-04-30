@@ -76,7 +76,7 @@ def train(customOptimizer, Shuffle, LR=0.2, Threshold=0.5, Epsilon=1e-5, Power=1
      optimizer = optim.SGD(model.parameters(), lr=LR)
      text += "standard optimizer"
   else:
-     optimizer = CLASSP_optimizer(model.parameters(), lr=LR, threshold=Threshold, epsilon=Epsilon, power=Power)  #  sigma controls the decay rate of the weight update
+     optimizer = CLASSP_optimizer(model.parameters(), lr=LR, threshold=Threshold, epsilon=Epsilon, power=Power)
      text += "custom optimizer"
 
   print("Training on combined dataset...", flush=True)
