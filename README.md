@@ -17,6 +17,7 @@ CLASSP is based on two main principles observed in neuroscience, particularly in
 
 Below is a pseudo-code representing the algorithm in CLASSP.py:
 
+<pre>
  1  Initialize CLASSP with `α`, `threshold`, power `p`, `apply_decay` and `ε`
  2  For each step in optimization
  3      Calculate `loss` with autograd
@@ -32,4 +33,5 @@ Below is a pseudo-code representing the algorithm in CLASSP.py:
  13                         Calculate scaling factor for `w`: 
  14                         `scaling_factor ← α / (ε + grad_sum)^(1/p)`
  15                         Update `w`: `w ← w - scaling_factor * grad`
- 16 Return `loss`
+ 16  Return `loss`
+</pre>
