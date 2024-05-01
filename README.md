@@ -1,7 +1,7 @@
-<table>
+<table style="border: none;">
   <tr>
-    <td><h1>CLASSP</h1></td>
-    <td><img src="CLASSP_logo.jpg" alt="CLASSP logo" width="50" height="50"/></td>
+    <td style="border: none;"><h1>CLASSP</h1></td>
+    <td style="border: none;"><img src="CLASSP_logo.jpg" alt="CLASSP logo" width="100" height="100"/></td>
   </tr>
 </table>
 A Biologically-Inspired Approach to **C**ontinual **L**earning through **A**djustment **S**uppression and **S**parsity **P**romotion
