@@ -1,8 +1,9 @@
-# CLASSP
 <p align="right">
-  <img width="100" height="100" src="CLASSP_logo.jpg">
+  <img width="100" height="100" src="CLASSP_logo.jpg" align="left">
 </p>
- A Biologically-Inspired Approach to **C**ontinual **L**earning through **A**djustment **S**uppression and **S**parsity **P**romotion
+
+# CLASSP
+A Biologically-Inspired Approach to **C**ontinual **L**earning through **A**djustment **S**uppression and **S**parsity **P**romotion
 
 This repository hosts the code for CLASSP, a unique continual learning approach inspired by biological learning principles. CLASSP addresses catastrophic forgetting by balancing the acquisition of new information with the preservation of past knowledge. If you use ideas or code from this repository in a publication, please cite our paper DOI: 10.13140/RG.2.2.20942.06724
 
