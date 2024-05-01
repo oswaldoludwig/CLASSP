@@ -5,7 +5,7 @@
       <h3>Continual Learning by Adjustment Suppression & Sparsity Promotion</h3>
     </td>
     <td style="border: none;">
-      <img src="CLASSP_logo.jpg" alt="CLASSP logo" width="120" height="120"/>
+      <img src="CLASSP_logo.jpg" alt="CLASSP logo" width="150" height="150"/>
     </td>
   </tr>
 </table>
