@@ -2,7 +2,7 @@
   <tr>
     <td style="border: none;">
       <h1>CLASSP</h1>
-      <h3>**C**ontinual  **L**earning  through  **A**djustment  **S**uppression  and  **S**parsity  **P**romotion</h2>
+      <h3> - Continual  Learning  through  Adjustment  Suppression  and  Sparsity  Promotion - </h2>
     </td>
     <td style="border: none;">
       <img src="CLASSP_logo.jpg" alt="CLASSP logo" width="150" height="150"/>
