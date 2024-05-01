@@ -14,12 +14,12 @@
 
 <div align="justify">CLASSP is implemented in a Python/PyTorch class (see CLASSP.py), making it applicable to any model. Usage is like any other optimizer:</div>
 
-<p style="color: blue;">
-**from CLASSP import CLASSP_optimizer**
-</p>
-<p style="color: blue;">
-**optimizer = CLASSP_optimizer(model.parameters(), lr=LR, threshold=Threshold, epsilon=Epsilon, power=Power)**
-</p>
+```diff
++ from CLASSP import CLASSP_optimizer
+```
+```diff
++ optimizer = CLASSP_optimizer(model.parameters(), lr=LR, threshold=Threshold, epsilon=Epsilon, power=Power)
+```
 
 See an example of use in the file **experiment_CV.py**
 
