@@ -2,14 +2,15 @@
   <tr>
     <td style="border: none;">
       <h1>CLASSP</h1>
-      <h3>Continual  Learning  through  Adjustment  Suppression  and  Sparsity  Promotion</h2>
+      <h3>**C**ontinual  **L**earning  through  **A**djustment  **S**uppression  and  **S**parsity  **P**romotion</h2>
     </td>
     <td style="border: none;">
       <img src="CLASSP_logo.jpg" alt="CLASSP logo" width="150" height="150"/>
     </td>
   </tr>
 </table>
-<p style="text-align: justify;">
+
+<p style="text-align: justify !important;">
 This repository hosts the code for CLASSP, a unique continual learning approach inspired by biological learning principles. CLASSP addresses catastrophic forgetting by balancing the acquisition of new information with the preservation of past knowledge. If you use ideas or code from this repository in a publication, please cite our paper DOI: 10.13140/RG.2.2.20942.06724
 
 CLASSP is implemented in a Python/PyTorch class (see CLASSP.py), making it applicable to any model. Usage is like any other optimizer:
