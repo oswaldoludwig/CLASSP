@@ -1,3 +1,6 @@
+<p align="right">
+  <img width="100" height="100" src="/blob/main/CLASSP_logo.jpg">
+</p>
 # CLASSP
  A Biologically-Inspired Approach to **C**ontinual **L**earning through **A**djustment **S**uppression and **S**parsity **P**romotion
 
