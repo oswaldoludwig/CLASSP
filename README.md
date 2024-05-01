@@ -1,7 +1,7 @@
 # CLASSP
-<div align="right">
-  <img src="CLASSP_logo.jpg" alt="CLASSP logo" width="100" height="100"/>
-</div>
+| | |
+|-|-|
+|<img src="CLASSP_logo.jpg" alt="CLASSP logo" width="50" height="50"/>|CLASSP|
 
 A Biologically-Inspired Approach to **C**ontinual **L**earning through **A**djustment **S**uppression and **S**parsity **P**romotion
 
