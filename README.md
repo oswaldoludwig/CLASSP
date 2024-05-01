@@ -1,7 +1,7 @@
 <table style="border: none;">
   <tr>
     <td style="border: none;"><h1>CLASSP                                                 </h1></td>
-    <td style="border: none;"><img src="CLASSP_logo.jpg" alt="CLASSP logo" width="50" height="50"/></td>
+    <td style="border: none;"><img src="CLASSP_logo.jpg" alt="CLASSP logo" width="150" height="150"/></td>
   </tr>
 </table>
 
