@@ -51,3 +51,14 @@ Procedure:
  15                         Update w: w ← w - scaling_factor * grad
  16  Return loss
 </pre>
+
+As seen in the pseudocode, the CLASS weight update rule is:
+
+$$
+w_{i,t+1} = 
+\begin{cases} 
+w_{i,t} - \frac{\alpha \nabla L(w_{i,t})}{\sqrt[p]{\epsilon + \sum_{k=0}^{t-1}\left|\nabla L(w_{i,k})\right|^p}} & \text{if } \nabla L(w_{i,t})^2 > \text{threshold} \\
+w_{i,t} & \text{otherwise}
+\end{cases}
+$$
+where $\nabla L(w_{i,t})$ is the derivative of loss function $L$ with respect to the model parameter $w_i$ at iteration $t$ and $\epsilon$ is a small value used to avoid numerical issues.
