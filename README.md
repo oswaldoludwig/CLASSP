@@ -52,8 +52,8 @@ Procedure:
  16  Return loss
 </pre>
 
-As seen in the pseudocode, the CLASS weight update rule is:
+As seen in the pseudocode, CLASSP weight update rule is:
 
-![alt text](https://github.com/oswaldoludwig/CLASSP/blob/main/equation_CLASSP.png)
+<img src="https://github.com/oswaldoludwig/CLASSP/blob/main/equation_CLASSP.png" width="500">
 
 where $\nabla L(w_{i,t})$ is the derivative of loss function $L$ with respect to the model parameter $w_i$ at iteration $t$ and $\epsilon$ is a small value used to avoid numerical issues.
