@@ -10,7 +10,16 @@
   </tr>
 </table>
 
-<div align="justify">This repository hosts the code for CLASSP, a unique continual learning approach inspired by biological learning principles. CLASSP addresses catastrophic forgetting by balancing the acquisition of new information with the preservation of past knowledge. If you use ideas or code from this repository in a publication, please cite the paper DOI: 10.13140/RG.2.2.20942.06724</div>
+<div align="justify">This repository hosts the code for CLASSP, a unique continual learning approach inspired by biological learning principles. CLASSP addresses catastrophic forgetting by balancing the acquisition of new information with the preservation of past knowledge. If you use ideas or code from this repository in a publication, please cite the paper:
+  
+@misc{ludwig2024classp,
+      title={CLASSP: a Biologically-Inspired Approach to Continual Learning through Adjustment Suppression and Sparsity Promotion}, 
+      author={Oswaldo Ludwig},
+      year={2024},
+      eprint={2405.09637},
+      archivePrefix={arXiv},
+      primaryClass={cs.NE}
+}</div>
 
 <div align="justify">CLASSP is implemented in a Python/PyTorch class (see CLASSP.py), making it applicable to any model. Usage is like any other optimizer:</div>
 
